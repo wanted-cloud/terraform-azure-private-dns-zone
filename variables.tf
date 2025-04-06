@@ -1,4 +1,4 @@
-variable "dns_zone_name" {
+variable "name" {
   description = "The name of the DNS zone"
   type        = string
 }
@@ -20,4 +20,15 @@ variable "soa_record" {
     tags         = optional(map(string), {})
   })
   default = null
+}
+
+variable "virtual_network_links" {
+  description = "The virtual network links"
+  type = list(object({
+    name                 = optional(string, "")
+    virtual_network_id   = string
+    registration_enabled = optional(bool, false)
+    tags                 = optional(map(string), {})
+  }))
+  default = []
 }
