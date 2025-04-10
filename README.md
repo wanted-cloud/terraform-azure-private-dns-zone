@@ -120,7 +120,7 @@ Description: The private DNS zone
 
 ### <a name="output_private_dns_zone_virtual_network_links"></a> [private\_dns\_zone\_virtual\_network\_links](#output\_private\_dns\_zone\_virtual\_network\_links)
 
-Description: The private DNS zone virtual network links
+Description: List of the private DNS zone virtual network links
 
 ## Resources
 

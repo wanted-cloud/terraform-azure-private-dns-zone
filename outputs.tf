@@ -4,6 +4,6 @@ output "private_dns_zone" {
 }
 
 output "private_dns_zone_virtual_network_links" {
-  description = "The private DNS zone virtual network links"
+  description = "List of the private DNS zone virtual network links"
   value       = azurerm_private_dns_zone_virtual_network_link.this
 }
