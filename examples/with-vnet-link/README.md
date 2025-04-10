@@ -1,0 +1,1 @@
+# wanted-cloud/terraform-azure-private-dns-zone/vnet-link-example

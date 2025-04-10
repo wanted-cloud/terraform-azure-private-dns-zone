@@ -6,9 +6,11 @@
  */
 resource "azurerm_private_dns_zone" "this" {
   name                = var.name
-  resource_group_name = var.resource_group_name
+  resource_group_name = data.azurerm_resource_group.this.name
+
   dynamic "soa_record" {
     for_each = var.soa_record != null ? [1] : []
+
     content {
       email        = var.soa_record.email
       expire_time  = var.soa_record.expire_time
